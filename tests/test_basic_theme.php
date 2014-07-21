@@ -1,7 +1,7 @@
 <?php
 
 // Include the functions for the theme
-include_once('../functions.php');
+include_once( dirname( __FILE__ ) . '/../functions.php');
  
 class Test_Basic_Theme extends WP_UnitTestCase {
      
