@@ -42,4 +42,4 @@ before_install:
     fi
 
 # Script, failures in this section will result in build status 'failed'
-script: phpunit -c tests/phpunit.xml.dist
+script: "phpunit -c tests/phpunit.xml.dist"
