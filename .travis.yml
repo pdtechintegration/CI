@@ -41,10 +41,5 @@ before_install:
         svn checkout https://plugins.svn.wordpress.org/wordpress-importer/trunk tests/phpunit/data/plugins/wordpress-importer
     fi
 
-# Before script, failures in this section will result in build status 'failed'
-before_script:
-  - npm install -g grunt-cli
-  - npm install
-
 # Script, failures in this section will result in build status 'failed'
-script: grunt $WP_TRAVISCI
+script: phpunit -c tests/phpunit/data/plugins/wordpress-importer
