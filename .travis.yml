@@ -33,6 +33,7 @@ before_install:
   - WP_CORE_DIR=/tmp/wordpress/
   - >
     if [[ "$WP_TRAVISCI" == "travis:phpunit" ]]; then
+	pwd
         mysql -e "CREATE DATABASE wordpress_tests;" -uroot
         cp wp-tests-config-sample.php wp-tests-config.php
         sed -i "s/pdb/wordpress_tests/" wp-tests-config.php
