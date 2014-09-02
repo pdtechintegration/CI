@@ -1,5 +1,5 @@
 <phpunit
-	bootstrap="tests/phpunit/includes/bootstrap.php"
+	bootstrap="phpunit/includes/bootstrap.php"
         backupGlobals="false"
         colors="true"
         >
@@ -7,14 +7,14 @@
         <!-- Default test suite to run all tests -->
         <testsuite>
             <directory suffix=".php">tests/phpunit/tests</directory>
-            <exclude>tests/phpunit/tests/actions/closures.php</exclude>
-            <exclude>tests/phpunit/tests/image/editor.php</exclude>
-            <exclude>tests/phpunit/tests/image/editor_gd.php</exclude>
-            <exclude>tests/phpunit/tests/image/editor_imagick.php</exclude>
-            <exclude>tests/phpunit/tests/image/functions.php</exclude>
-            <exclude>tests/phpunit/tests/image/resize.php</exclude>
-            <exclude>tests/phpunit/tests/image/resize_gd.php</exclude>
-            <exclude>tests/phpunit/tests/post/attachments.php</exclude>
+            <exclude>phpunit/tests/actions/closures.php</exclude>
+            <exclude>phpunit/tests/image/editor.php</exclude>
+            <exclude>phpunit/tests/image/editor_gd.php</exclude>
+            <exclude>phpunit/tests/image/editor_imagick.php</exclude>
+            <exclude>phpunit/tests/image/functions.php</exclude>
+            <exclude>phpunit/tests/image/resize.php</exclude>
+            <exclude>phpunit/tests/image/resize_gd.php</exclude>
+            <exclude>phpunit/tests/post/attachments.php</exclude>
             <file>test_basic_theme.php</file>
         </testsuite>
     </testsuites>
@@ -24,6 +24,6 @@
         </exclude>
     </groups>
     <logging>
-        <log type="junit" target="tests/phpunit/build/logs/junit.xml" logIncompleteSkipped="false"/>
+        <log type="junit" target="phpunit/build/logs/junit.xml" logIncompleteSkipped="false"/>
     </logging>
 </phpunit>
