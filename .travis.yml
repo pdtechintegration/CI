@@ -25,8 +25,8 @@ matrix:
     - php: hhvm
   fast_finish: true
 
-  env:
-- WP_VERSION=master WP_MULTISITE=1
+env:
+  - WP_VERSION=master WP_MULTISITE=1
 
 # Before install, failures in this section will result in build status 'errored'
 before_install:
