@@ -6,7 +6,7 @@
     <testsuites>
         <!-- Default test suite to run all tests -->
         <testsuite>
-            <directory suffix=".php">tests/phpunit/tests</directory>
+            <directory suffix=".php">phpunit/tests</directory>
             <exclude>phpunit/tests/actions/closures.php</exclude>
             <exclude>phpunit/tests/image/editor.php</exclude>
             <exclude>phpunit/tests/image/editor_gd.php</exclude>
