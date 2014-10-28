@@ -9,6 +9,7 @@
  * @package WordPress
  * @subpackage Twenty_Fourteen
  * @since Twenty Fourteen 1.0
+ * Making something up for demo
  */
 
 get_header(); ?>
